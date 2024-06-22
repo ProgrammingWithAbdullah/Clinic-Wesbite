@@ -1,0 +1,134 @@
+/* Scrollbar  */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d9e8f6;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+/*Hero */
+
+
+#ap:hover,#pd:hover,#sp:hover{
+  background-color: white;
+  color: #e56565;
+  border: 1px solid #e56565;
+}
+
+#ap:hover,#pd:hover,#sp:active{
+  background-color: white;
+  color: #e56565;
+  border: 1px solid #e56565;
+
+}
+
+
+
+#mainbuttons button {
+
+  
+  border: 1px;
+  color: white;
+  border-radius: 7px;
+  margin: 5px;
+  padding: 12px 6px;
+  background-color: #e56565;
+  
+
+}
+
+.hero {
+  background-color: #8984e6;
+  padding-top: 3rem;
+  margin-bottom: 1rem;
+  height: 60px;
+}
+
+
+
+.title {
+
+  transform: translateY(-95%);
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+
+}
+
+
+/*   NAVBAR */
+
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 3px solid #e84de2;
+  position: fixed; /* This makes the navbar stay fixed in its position */
+  top: 0; /* Position it at the top of the viewport */
+  width: 100%; /* Make it take the full width of the viewport */
+  background-color: #ffffff;
+  border-bottom: 3px solid #e84de2;
+  z-index: 1000; /* Ensure the navbar stays above other content */
+}
+
+.container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-container {
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h2 {
+  color: rgb(35, 135, 228);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+}
+
+.logo-img {
+  height: 2.3rem;
+  width: auto;
+}
+
+.logo-text {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: medium;
+    margin-left: 16px;
+  }
+}
+
+
+

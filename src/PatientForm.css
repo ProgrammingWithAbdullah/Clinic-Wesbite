@@ -1,0 +1,115 @@
+/*  aDDpaTIENTS  */
+
+#pform {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: #d9e8f6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 2px 3px grey;
+    align-items: flex-start;
+
+}
+
+.left-partition,
+.right-partition {
+    flex-basis: 50%;
+}
+
+#pform label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#pform input[type="text"],
+#pform input[type="number"] {
+    width: calc(90% - 40px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+
+#pform select,
+#subbtn {
+
+    width: calc(90% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+
+}
+
+
+#date,
+#dropd {
+
+    width: calc(90% - 40px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#dropd {
+    width: calc(90% - 40px);
+}
+
+
+#subbtn {
+    padding: 10px;
+    background-color: #1e4d6c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#pform button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+
+    #pform,
+    #pform select {
+        max-width: 90%;
+
+
+    }
+}
+
+@media (max-width: 600px) {
+
+    .left-partition,
+    .right-partition {
+        flex-basis: 50%;
+    }
+}
+
+
+#cross {
+    color: red;
+    border: 1px solid red;
+    border-radius: 50px;
+    padding: 3px;
+    font-weight: 100;
+}
+
+#title {
+    position: absolute;
+    left: 31%;
+    top: -2%;
+    font-size: large;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+

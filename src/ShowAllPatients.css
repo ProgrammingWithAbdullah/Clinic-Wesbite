@@ -1,0 +1,280 @@
+#showallpatients {
+    margin-top: 20px;
+    max-height: 300px;
+    max-width: 50%;
+    overflow-y: auto;
+
+    margin: 0 auto;
+    padding: 10px;
+
+    border-radius: 5px;
+    background-color: #d9e8f6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 2px 3px grey;
+    align-items: flex-start;
+
+}
+
+
+
+#showallpatients ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-gap: 10px;
+    list-style: none;
+}
+
+#showallpatients li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    color: #2fa1e7;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#showallpatients li:nth-child(even) {
+    background-color: #eaedf0;
+
+}
+
+#showallpatients h2 {
+    margin-bottom: 10px;
+    color: #c61111;
+}
+
+
+@media (max-width: 600px) {
+    #showallpatients {
+        max-width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* pOP UP*/
+
+
+
+
+
+#editmodal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 60%;
+    max-width: 600px;
+    max-height: 600px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: auto;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    #editmodal {
+        width: 80%;
+        height: 44%;
+    }
+}
+
+
+
+#patdetails {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 60%;
+    max-width: 600px;
+    max-height: 600px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: auto;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    #patdetails {
+        width: 80%;
+        height: 45%;
+    }
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+}
+
+#pcard {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    align-items: flex-start;
+    text-align: left;
+}
+
+
+.cancel-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#edtbtn,
+#delbtn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+
+}
+
+#edtbtn {
+    background-color: #4CAF50;
+    color: white;
+
+}
+
+#delbtn {
+    background-color: #f44336;
+    color: white;
+    margin-right: 10%;
+}
+
+
+
+#edtbtn:hover {
+
+    background-color: white;
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+
+}
+
+
+#delbtn:hover {
+    background-color: white;
+    color: #f44336;
+    border: 1px solid #f44336;
+}
+
+h1 {
+    color: brown;
+    font-size: x-large
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h5 {
+    margin: 5px 0;
+    font-size: large;
+}
+
+.medhis {
+    white-space: pre-wrap;
+}
+
+
+#counts{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+   
+}
+
+#csvbtn{
+    padding: 8.3px;
+    margin-right: 5px;
+    background-color: #4CAF50;
+}
+
+#counts{
+    padding: 6px;
+    background-color: #2fa1e7;
+}
+
+
+
+#csvbtn , #counts{
+
+   
+    color: white;
+    border-style: none;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+#csvbtn:hover {
+
+    background-color: white;
+    color: #4CAF50;
+    border: 1px solid rgb(111, 223, 111);
+   
+
+}
+
+
+.button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#infor,i{
+    color: goldenrod;
+    margin-left: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;  ;
+
+}
